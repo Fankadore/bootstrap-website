@@ -1,0 +1,88 @@
+body {
+    background-color: #112233;
+}
+
+header {
+    background-color: #112233;
+    color: #cce1ee;
+}
+
+header h1 {
+    font-family: 'Vollkorn SC';
+    font-size: 48px;
+}
+
+header a:hover, header a:active {
+    text-decoration: none;
+}
+
+header img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+header nav {
+    background-color: #001122;
+}
+
+header .nav-item:hover {
+    background-color: #334455;
+}
+
+header .nav-item:active {
+    background-color: #556677;
+}
+
+header a, header a:visited {
+    color: #cce1ee;
+
+}
+
+header a:hover, header a:active {
+    text-decoration: none;
+}
+
+header .nav-link:hover, header .nav-link:active {
+    color: #00a0ff;
+}
+
+
+section {
+    background-color: #cce1ee;
+    color: #112233;
+}
+
+section .card-header {
+    background: #eeeef1;
+}
+
+section .card-body {
+    background: #ffffff;
+}
+
+section .profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+section .nav-item {
+    background: #eeeef1;
+}
+
+section .nav-link {
+    color: #000000;
+}
+
+section .nav-link:hover, section .nav-link:active {
+    text-decoration: none;
+    color: #00a0ff;
+}
+
+footer {
+    background-color: #112233;
+    color: #cce1ee;
+}
+
+footer p {
+    vertical-align: middle;
+}
