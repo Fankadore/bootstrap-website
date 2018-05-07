@@ -1,5 +1,6 @@
 body {
-    background-color: #112233;
+    /*background-color: #112233;*/
+    background-color: #ffffff;
 }
 
 header {
@@ -7,18 +8,22 @@ header {
     color: #cce1ee;
 }
 
-header h1 {
-    font-family: 'Vollkorn SC';
-    font-size: 48px;
+header a, header a:visited {
+    color: #cce1ee;
 }
 
 header a:hover, header a:active {
     text-decoration: none;
 }
 
+header h1 {
+    font-family: 'Vollkorn SC';
+    font-size: 48px;
+}
+
 header img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 125px;
+    max-height: 125px;
 }
 
 header nav {
@@ -33,22 +38,13 @@ header .nav-item:active {
     background-color: #556677;
 }
 
-header a, header a:visited {
-    color: #cce1ee;
-
-}
-
-header a:hover, header a:active {
-    text-decoration: none;
-}
-
 header .nav-link:hover, header .nav-link:active {
     color: #00a0ff;
 }
 
 
 section {
-    background-color: #cce1ee;
+    background-color: #ffffff;
     color: #112233;
 }
 
@@ -69,7 +65,7 @@ section .nav-item {
     background: #eeeef1;
 }
 
-section .nav-link {
+section .nav-link, section .nav-link:visited {
     color: #000000;
 }
 
@@ -78,11 +74,37 @@ section .nav-link:hover, section .nav-link:active {
     color: #00a0ff;
 }
 
+section .privacy {
+    font-size: 12px;
+}
+
+button {
+    background-color: #112233;
+    color: #cce1ee;
+}
+
+button:hover {
+    background-color: #334455;
+    color: #00a0ff;
+}
+
+button:active {
+    background-color: #556677;
+    color: #00a0ff;
+}
+
+
 footer {
     background-color: #112233;
     color: #cce1ee;
 }
 
-footer p {
-    vertical-align: middle;
+canvas {
+    border: 5px solid #0000a0;
+    border-bottom: none;
+    background: #ffffff;
+}
+
+.bg-test {
+    background-color: #ff00ff;
 }

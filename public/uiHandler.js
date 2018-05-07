@@ -1,24 +1,48 @@
 "use strict";
 
-const username = document.querySelector('input-username').value;
-const email = document.querySelector('input-email').value;
-const password = document.querySelector('input-password').value;
-const confirmPassword = document.querySelector('input-confirm').value;
-const button = document.querySelector('button-submit');
+// Sign Up Request Handler
+const signupEmail = document.querySelector('.signup-email').value;
+const signupPassword = document.querySelector('.signup-password').value;
+const signupConfirmPassword = document.querySelector('.signup-confirm').value;
+const signupButton = document.querySelector('.signup-submit');
 
-function submitRequest() {
-    // Check that all fields have been entered
-    if (!username || !email || !password || !confirmPassword) {
-        return console.log('All fields are required.')
-    }
+function signupRequest() {
+	//console.log(signupEmail + " - " + signupPassword + " - " + signupConfirmPassword);
 
-    // Check if passwords match
-    if (password !== confirmPassword) {
-        return console.log('Password does not match confirmed password.');
-    }
+	// Check that all fields have been entered
+	if (!signupEmail || !signupPassword || !signupConfirmPassword) {
+		return console.log('All fields are required.')
+	}
 
-    // Send HTTP Post request with email and password
-    
+	// Check if passwords match
+	if (signupPassword !== signupConfirmPassword) {
+		return console.log('Password does not match confirmed password.');
+	}
+
+	// Send HTTP Post request with email and password
+	
 }
+signupButton.addEventListener('click', signupRequest);
 
-button.addEventListener('click', submitRequest);
+
+// Sign In Request Handler
+const signinEmail = document.querySelector('.signin-email').value;
+const signinPassword = document.querySelector('.signin-password').value;
+const signinButton = document.querySelector('.signin-submit');
+
+function signinRequest() {
+	// Check that all fields have been entered
+	if (!signinEmail || !signinPassword) {
+		return console.log('All fields are required.')
+	}
+
+	// Send HTTP Post request with email and password
+	
+}
+signinButton.addEventListener('click', signinRequest);
+
+
+// Bootstrap Popover jQuery Handler
+$(document).ready(function() {
+	$('[data-toggle="popover"]').popover();
+});

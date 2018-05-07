@@ -8,79 +8,105 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn+SC">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		<title>Ruaidhri MacKenzie</title>
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid p-0 m-0">
+			<!-- HEADER -->
 			<header>
-				<div class="row">
+				<div class="row p-0 m-0">
 					<div class="col-md-auto">
-						<img class="mx-auto d-block" src="crest-logo.png" alt="MacKenzie Clan Crest Logo">
+						<a href="index.html"><img class="d-block mx-auto my-2" src="img/crest-logo.png" alt="MacKenzie Clan Crest Logo"></a>
 					</div>
 					<div class="col col-md-auto align-self-center text-center pt-2">
-						<h1><a href="#">Ruaidhri MacKenzie</a></h1>
+						<a href="index.html"><h1>Ruaidhri MacKenzie</h1></a>
 					</div>
 				</div>
-				<nav class="row nav text-center">
-					<a class="col-6 col-sm-3 nav-item nav-link" href="#">HOME</a>
-					<a class="col-6 col-sm-3 nav-item nav-link" href="#">PROJECTS</a>
-					<a class="col-6 col-sm-3 nav-item nav-link" href="#">RESUME</a>
-					<a class="col-6 col-sm-3 nav-item nav-link" href="#">CONTACT</a>
+				<nav class="row nav text-center p-0 m-0">
+					<a class="col-6 col-sm-3 nav-item nav-link" href="index.html">HOME</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="projects.html">PROJECTS</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="resume.html">RESUME</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="contact.html">CONTACT</a>
 				</nav>
 			</header>
 
-			<section class="row">
+			<!-- MAIN SECTION -->
+			<section class="row p-0 m-0">
+				<!-- ABOUT ME CARD -->
 				<section class="card col-12 col-sm-6 col-lg-4 p-0">
 					<h2 class="card-header text-center">About Me</h2>
 					<div class="card-body">
-						<p class="card-text">My name is Ruaidhri MacKenzie. I'm an aspiring Web Developer currently working as IT support for a successful local business in Aberdeenshire, Scotland.</p>
+						<img class="d-block mx-auto float-right float-sm-none float-lg-right profile-pic" src="img/profile-pic.jpg" alt="My handsome profile picture.">
+						<p class="card-text">I'm Ruaidhri MacKenzie, an aspiring Web Developer from Aberdeenshire, Scotland. Currently working as IT support for a successful local business. My aim is to become a full-stack developer creating professional websites for small businesses.</p>
 					</div>
-					<img class="card-img mx-auto mb-3 profile-pic" src="profile-pic.jpg" alt="My handsome profile picture.">
 				</section>
 
+				<!-- THIS SITE CARD -->
 				<section class="card col-12 col-sm-6 col-lg-4 p-0">
 					<h2 class="card-header text-center">This Site</h2>
 					<div class="card-body">
-						<p class="card-text">A responsive website using the Bootstrap framework. The purpose is to become familiar with responsive web development and showcase my abilities in design. I will also add projects which I am working on and a link to my current CV.</p>
+						<p class="card-text">I've built this site using the Bootstrap framework, the purpose being to become familiar with responsive web development and showcase my abilities in design. I will also add projects I'm working on and a link to my current CV.</p>
 					</div>
 				</section>
 
+				<!-- SIGNUP/SIGNIN CARD -->
 				<section class="card col-12 col-lg-4 p-0">
 					<nav class="nav nav-tabs nav-justified">
 						<a class="nav-item nav-link active" data-toggle="tab" href="#signup"><h2>Sign Up</h2></a>
 						<a class="nav-item nav-link" data-toggle="tab" href="#signin"><h2>Sign In</h2></a>
 					</nav>
 					<div class="card-body">
-						<p class="card-text">Authentication is handled by passport.js, passwords are hashed using bcrypt.js, details are stored using MongoDB.</p>
+						<p class="card-text text-center">Authentication is handled by passport.js, passwords are hashed using bcrypt.js, data is stored using MongoDB.</p>
 						<div class="tab-content">
-							<div class="container tab-pane active" id="signup">
-								<form class="form-group">
-									<input class="form-control" type="email" placeholder="Enter your email">
-									<input class="form-control" type="password" placeholder="Select a password">
-									<input class="form-control" type="password" placeholder="Confirm password">
-									<button class="btn btn-primary w-100" type="submit">Sign Up</button>
+							<div class="container tab-pane active p-0" id="signup">
+								<form class="form-group m-0">
+									<input class="form-control signup-email" type="email" placeholder="Enter your email">
+									<input class="form-control signup-password" type="password" placeholder="Select a password">
+									<input class="form-control signup-confirm" type="password" placeholder="Confirm password">
+									<button class="btn w-100 signup-submit" type="submit">Sign Up</button>
+									<div class="text-right">
+											<a href="#" class="privacy" data-toggle="popover" data-trigger="focus" data-placement="top" title="Privacy Policy" 
+											data-content="Data will only be stored with your express consent, only data required for your use of the site will be stored. 
+											Your data will never be sold to a third-party. 
+											You can request a report of your data under the Profile section. 
+											You can remove your data at any time by selecting Delete Account under the Profile section. 
+											Please be aware we will not be able to fulfill any request to retrieve this data once it has been removed.">Privacy Policy</a>
+									</div>
 								</form>
 							</div>
-							<div class="container tab-pane" id="signin">
-								<form class="form-group">
-									<input class="form-control" type="email" placeholder="Enter your email">
-									<input class="form-control" type="password" placeholder="Enter your password">
-									<button class="btn btn-primary w-100" type="submit">Sign In</button>
-								</form>
+								<div class="container tab-pane p-0" id="signin">
+									<form class="form-group m-0">
+										<input class="form-control signin-email" type="email" placeholder="Enter your email">
+										<input class="form-control signin-password" type="password" placeholder="Enter your password">
+										<button class="btn w-100 signin-submit" type="submit">Sign In</button>
+										<div class="text-right">
+												<a href="#" class="privacy" data-toggle="popover" data-trigger="focus" data-placement="top" title="Privacy Policy" 
+												data-content="Data will only be stored with your express consent, only data required for your use of the site will be stored. 
+												Your data will never be sold to a third-party. 
+												You can request a report of your data under the Profile section. 
+												You can remove your data at any time by selecting Delete Account under the Profile section. 
+												Please be aware we will not be able to fulfill any request to retrieve this data once it has been removed.">Privacy Policy</a>
+										</div>
+										<input class="form-control invisible" disabled>
+									</form>
+								</div>
 							</div>
-						</div>
 					</div>
 				</section>
 			</section>
-
-			<footer class="row justify-content-center">
-				<div class="col-auto">
+			
+			<!-- FOOTER -->
+			<footer class="row p-0 m-0">
+				<div class="col text-center pt-2">
 					<p>Ruaidhri MacKenzie © 2018 rmackenzie88@protonmail.com</p>
 				</div>
 			</footer>
 		</div>
+
+		<script src="uiHandler.js"></script>
 	</body>
 </html>
