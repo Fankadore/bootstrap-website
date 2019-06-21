@@ -20,17 +20,20 @@
 			<header>
 				<div class="row p-0 m-0">
 					<div class="col-md-auto">
-						<a href="index.html"><img class="d-block mx-auto my-2" src="img/crest-logo.png" alt="MacKenzie Clan Crest Logo"></a>
+						<a href="/"><img class="d-block mx-auto my-2" src="img/crest-logo.png" alt="MacKenzie Clan Crest Logo"></a>
 					</div>
-					<div class="col col-md-auto align-self-center text-center pt-2">
-						<a href="index.html"><h1>Ruaidhri MacKenzie</h1></a>
+					<div class="col-12 col-md-auto align-self-center text-center">
+						<a href="/"><h1>Ruaidhri MacKenzie</h1></a>
+					</div>
+					<div class="col-12 col-lg-auto align-self-center text-center">
+						<a href="/"><h2>Web Developer</h2></a>
 					</div>
 				</div>
 				<nav class="row nav text-center p-0 m-0">
-					<a class="col-6 col-sm-3 nav-item nav-link" href="index.html">HOME</a>
-					<a class="col-6 col-sm-3 nav-item nav-link" href="projects.html">PROJECTS</a>
-					<a class="col-6 col-sm-3 nav-item nav-link" href="resume.html">RESUME</a>
-					<a class="col-6 col-sm-3 nav-item nav-link" href="contact.html">CONTACT</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="/">HOME</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="/projects">PROJECTS</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="/resume">RESUME</a>
+					<a class="col-6 col-sm-3 nav-item nav-link" href="/contact">CONTACT</a>
 				</nav>
 			</header>
 
@@ -53,8 +56,14 @@
 					</div>
 				</section>
 
+				<!-- BENNACHIE CARD-->
+				<section class="card col-12 col-sm-6 col-lg-4 p-0">
+					<h2 class="card-header text-center">Where I'm From</h2>
+					<img class="card-img" src="img/bennachie.jpg" alt="View of Bennachie taken by Cowbyres.">
+				</section>
+				
 				<!-- SIGNUP/SIGNIN CARD -->
-				<section class="card col-12 col-lg-4 p-0">
+				<section class="card col-12 col-sm-6 col-lg-12 p-0">
 					<nav class="nav nav-tabs nav-justified">
 						<a class="nav-item nav-link active" data-toggle="tab" href="#signup"><h2>Sign Up</h2></a>
 						<a class="nav-item nav-link" data-toggle="tab" href="#signin"><h2>Sign In</h2></a>
@@ -62,27 +71,14 @@
 					<div class="card-body">
 						<p class="card-text text-center">Authentication is handled by passport.js, passwords are hashed using bcrypt.js, data is stored using MongoDB.</p>
 						<div class="tab-content">
-							<div class="container tab-pane active p-0" id="signup">
-								<form class="form-group m-0">
-									<input class="form-control signup-email" type="email" placeholder="Enter your email">
-									<input class="form-control signup-password" type="password" placeholder="Select a password">
-									<input class="form-control signup-confirm" type="password" placeholder="Confirm password">
-									<button class="btn w-100 signup-submit" type="submit">Sign Up</button>
-									<div class="text-right">
-											<a href="#" class="privacy" data-toggle="popover" data-trigger="focus" data-placement="top" title="Privacy Policy" 
-											data-content="Data will only be stored with your express consent, only data required for your use of the site will be stored. 
-											Your data will never be sold to a third-party. 
-											You can request a report of your data under the Profile section. 
-											You can remove your data at any time by selecting Delete Account under the Profile section. 
-											Please be aware we will not be able to fulfill any request to retrieve this data once it has been removed.">Privacy Policy</a>
-									</div>
-								</form>
-							</div>
-								<div class="container tab-pane p-0" id="signin">
-									<form class="form-group m-0">
-										<input class="form-control signin-email" type="email" placeholder="Enter your email">
-										<input class="form-control signin-password" type="password" placeholder="Enter your password">
-										<button class="btn w-100 signin-submit" type="submit">Sign In</button>
+							<div class="container tab-pane active" id="signup">
+								<div class="row">
+									<div class="col-12 col-lg-3"></div>
+									<form action="../signup" method="post" class="col-12 col-lg-6 form-group m-auto">
+										<input class="form-control signup-email" type="email" placeholder="Enter your email">
+										<input class="form-control signup-password" type="password" placeholder="Select a password">
+										<input class="form-control signup-confirm" type="password" placeholder="Confirm password">
+										<button class="btn w-100 signup-submit" type="submit">Sign Up</button>
 										<div class="text-right">
 												<a href="#" class="privacy" data-toggle="popover" data-trigger="focus" data-placement="top" title="Privacy Policy" 
 												data-content="Data will only be stored with your express consent, only data required for your use of the site will be stored. 
@@ -91,8 +87,29 @@
 												You can remove your data at any time by selecting Delete Account under the Profile section. 
 												Please be aware we will not be able to fulfill any request to retrieve this data once it has been removed.">Privacy Policy</a>
 										</div>
-										<input class="form-control invisible" disabled>
 									</form>
+									<div class="col-12 col-lg-3"></div>							
+								</div>
+							</div>
+								<div class="container tab-pane" id="signin">
+									<div class="row">
+										<div class="col-12 col-lg-3"></div>
+										<form class="col-12 col-lg-6 form-group m-auto">
+											<input class="form-control signin-email" type="email" placeholder="Enter your email">
+											<input class="form-control signin-password" type="password" placeholder="Enter your password">
+											<button class="btn w-100 signin-submit" type="submit">Sign In</button>
+											<div class="text-right">
+													<a href="#" class="privacy" data-toggle="popover" data-trigger="focus" data-placement="top" title="Privacy Policy" 
+													data-content="Data will only be stored with your express consent, only data required for your use of the site will be stored. 
+													Your data will never be sold to a third-party. 
+													You can request a report of your data under the Profile section. 
+													You can remove your data at any time by selecting Delete Account under the Profile section. 
+													Please be aware we will not be able to fulfill any request to retrieve this data once it has been removed.">Privacy Policy</a>
+											</div>
+											<input class="form-control invisible" disabled>
+										</form>
+										<div class="col-12 col-lg-3"></div>
+									</div>
 								</div>
 							</div>
 					</div>

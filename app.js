@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/', express.static(__dirname + '/public'));
-app.use('/users', require('./routes/users'));
+app.use('/', require('./public/publicRoutes'));
+app.use('/users', require('./users/userRoutes'));
 
 // Start the Server
 const port = process.env.PORT || 2000;
