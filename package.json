@@ -18,8 +18,8 @@
   "homepage": "https://github.com/Fankadore/website#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-promise-router": "^3.0.1",
     "joi": "^13.1.2",
     "jsonwebtoken": "^8.2.1",
